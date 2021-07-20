@@ -9,32 +9,32 @@ pipeline
   {
     stage("Prepare")
     {
-      Steps
+      steps
       {
         echo "Im preparing!"
       }
     }
     stage("Build")
     {
-      Environment
+      environment
       {
         LogLevel = "Info"
       }
-      Steps
+      steps
       {
         echo "I am building build ${buildnumber} with log level ${LogLevel}"
       }
     }
-    Stage("Test")
+    stage("Test")
     {
-      Steps
+      steps
       {
         echo "Testing build ${buildnumber}"
         writeFile file: "result.txt", text: "passed"
       }
     }
   }
-  Post
+  post
   {
     success
     {
