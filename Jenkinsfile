@@ -7,14 +7,14 @@ pipeline
   }
   stages
   {
-    Stage("Prepare")
+    stage("Prepare")
     {
       Steps
       {
         echo "Im preparing!"
       }
     }
-    Stage("Build")
+    stage("Build")
     {
       Environment
       {
