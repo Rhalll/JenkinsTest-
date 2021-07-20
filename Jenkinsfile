@@ -22,14 +22,14 @@ pipeline
       }
       Steps
       {
-        echo "I am building build $(buildnumber) with log level $(LogLevel)"
+        echo "I am building build ${buildnumber} with log level ${LogLevel}"
       }
     }
     Stage("Test")
     {
       Steps
       {
-        echo "Testing build $(buildnumber)"
+        echo "Testing build ${buildnumber}"
         writeFile file: "result.txt", text: "passed"
       }
     }
