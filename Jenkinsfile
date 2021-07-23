@@ -41,7 +41,7 @@ pipeline
       }
       steps
       {
-        echo "This is RC! publishing!"
+        publishStuff()
       }
     }
   }
@@ -52,4 +52,9 @@ pipeline
       archiveArtifacts 'result.txt'
     }
   }
+}
+
+void publishStuff()
+{
+  echo "This is RC! publishing!"
 }
