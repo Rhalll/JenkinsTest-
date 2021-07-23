@@ -1,7 +1,7 @@
 pipeline
 {
   agent any
-  parameters{booleanParam(name: "RC",defaultvalue: false,description: "Is this RC?")}
+  parameters{booleanParam(name: "RC",defaultValue: false,description: "Is this RC?")}
   environment
   {
     buildnumber = "1.1.1"
