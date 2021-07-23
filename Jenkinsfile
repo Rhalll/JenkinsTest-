@@ -34,6 +34,16 @@ pipeline
         writeFile file: "result.txt", text: "passed"
       }
     }
+    stage("Publish")
+    {
+      when{
+        expression{return.params.RC}
+      }
+      steps
+      {
+        echo "This is RC! publishing!"
+      }
+    }
   }
   post
   {
