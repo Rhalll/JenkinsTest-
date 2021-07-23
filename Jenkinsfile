@@ -37,7 +37,7 @@ pipeline
     stage("Publish")
     {
       when{
-        expression{return.params.RC}
+        expression{return params.RC}
       }
       steps
       {
