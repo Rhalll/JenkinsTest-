@@ -1,3 +1,5 @@
+library identifier: 'JenkinsTest-@main'
+        retriever: modernSCM([$class: 'gitSCMSource',remote: 'https://github.com/Rhalll/JenkinsTest-.git'])
 pipeline
 {
   agent any
@@ -52,9 +54,4 @@ pipeline
       archiveArtifacts 'result.txt'
     }
   }
-}
-
-void publishStuff()
-{
-  echo "This is RC! publishing!"
 }
