@@ -43,7 +43,7 @@ pipeline
       }
       steps
       {
-        publishStuff()
+        jenkinsPublish()
       }
     }
   }
