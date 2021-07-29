@@ -1,5 +1,5 @@
 library identifier: 'JenkinsTest-@main',
-        retriever: modernSCM([$class: 'gitSCMSource',remote: 'https://github.com/Rhalll/JenkinsTest-.git'])
+        retriever: modernSCM([$class: 'GitSCMSource',remote: 'https://github.com/Rhalll/JenkinsTest-.git'])
 pipeline
 {
   agent any
