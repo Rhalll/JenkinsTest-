@@ -1,4 +1,4 @@
-library identifier: 'JenkinsTest-@main'
+library identifier: 'JenkinsTest-@main',
         retriever: modernSCM([$class: 'gitSCMSource',remote: 'https://github.com/Rhalll/JenkinsTest-.git'])
 pipeline
 {
